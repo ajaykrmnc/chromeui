@@ -24,7 +24,7 @@
     <!-- Search bar (hidden by default) -->
     <div class="search-bar" id="searchBar" style="display: none;">
       <span class="search-icon">/</span>
-      <input type="text" id="searchInput" placeholder="Search tabs..." autocomplete="off">
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
     </div>
 
     <!-- Command bar (hidden by default) -->
@@ -33,10 +33,40 @@
       <input type="text" id="commandInput" placeholder="" autocomplete="off">
     </div>
 
-    <!-- Tab list -->
-    <main class="tab-list" id="tabList">
-      <!-- Tabs will be rendered here -->
-    </main>
+    <!-- Main content with left-right layout -->
+    <div class="main-content">
+      <!-- Left sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <!-- New Tab (part of navigation) -->
+        <div class="sidebar-item new-tab" id="newTabBtn" data-action="newtab">
+          <span class="sidebar-icon">+</span>
+          <span class="sidebar-text">New Tab</span>
+        </div>
+        <!-- Navigation items -->
+        <div class="sidebar-item active" data-view="tabs" id="navTabs">
+          <span class="sidebar-icon">󰓩</span>
+          <span class="sidebar-text">Open Tabs</span>
+          <span class="sidebar-count" id="tabsCount">0</span>
+        </div>
+        <div class="sidebar-item" data-view="bookmarks" id="navBookmarks">
+          <span class="sidebar-icon">󰃀</span>
+          <span class="sidebar-text">Bookmarks</span>
+          <span class="sidebar-count" id="bookmarksCount">0</span>
+        </div>
+        <div class="sidebar-item" data-view="history" id="navHistory">
+          <span class="sidebar-icon">󰋚</span>
+          <span class="sidebar-text">History</span>
+          <span class="sidebar-count" id="historyCount">0</span>
+        </div>
+      </aside>
+
+      <!-- Right content area -->
+      <main class="content-area">
+        <div class="content-list" id="contentList">
+          <!-- Content will be rendered here -->
+        </div>
+      </main>
+    </div>
 
     <!-- Status bar -->
     <footer class="status-bar">

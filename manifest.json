@@ -5,7 +5,9 @@
   "description": "Manage Chrome tabs with Vim-like keybindings in a Neovim TUI-style interface",
   "permissions": [
     "tabs",
-    "activeTab"
+    "activeTab",
+    "bookmarks",
+    "history"
   ],
   "action": {
     "default_title": "Open VimTab Manager"

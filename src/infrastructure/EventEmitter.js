@@ -78,5 +78,10 @@ export const Events = {
   CURSOR_MOVED: 'cursor:moved',
   ERROR: 'error',
   NOTIFICATION: 'notification',
+  // New events for multi-view support
+  CONTENT_UPDATED: 'content:updated',
+  VIEW_CHANGED: 'view:changed',
+  BOOKMARKS_UPDATED: 'bookmarks:updated',
+  HISTORY_UPDATED: 'history:updated',
 };
 
